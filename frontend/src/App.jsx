@@ -6,13 +6,15 @@ import Contact from './pages/Contact'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
 import SingleBlog from './pages/SingleBlog'
+import Navbar from './components/Navbar'
 
 
 
 function App() {
 
   return (
-    <>
+    <div className='max-w-7xl mx-auto'>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />  
         <Route path='/blogs' element={<Blogs />} />
@@ -22,7 +24,7 @@ function App() {
         <Route path='/register' element={<Signup />} />
         <Route path='/blog/:id' element={<SingleBlog />} />
       </Routes>      
-    </>
+    </div>
   )
 }
 
