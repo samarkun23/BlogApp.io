@@ -4,7 +4,7 @@ import BlogCard from "./BlogCard";
 const LatestBlogs = () => {
     return (
         <div>
-            <h1 className="text-3xl font-bold text-center sm:text-start">Latest Blogs</h1>
+            <h1 className="text-3xl my-3 font-bold text-center sm:text-start">Latest Blogs</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 px-3 sm:px-4">
                 {blogData.map((blog, index) => (
                     <BlogCard
