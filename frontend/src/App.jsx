@@ -7,6 +7,7 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import SingleBlog from './pages/SingleBlog'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 
 
@@ -23,7 +24,8 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Signup />} />
         <Route path='/blog/:id' element={<SingleBlog />} />
-      </Routes>      
+      </Routes>     
+      <Footer /> 
     </div>
   )
 }
